@@ -758,4 +758,16 @@ font-family: var(--font-geist-sans);
     font-weight: 800;
   }
 
+
+  .mainabout{
+    color: black;
+    background-color: whitesmoke;
+    margin-top: 4rem;
+  }
+
+  .mainabout div{
+    width: 80%;
+    margin: auto;
+  }
+
 `
