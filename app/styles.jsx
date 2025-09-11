@@ -98,7 +98,7 @@ export const Navbar = styled.nav`
         transform: scale(1.05);
     }
 
-    .middle ul{
+    .middle{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -109,10 +109,62 @@ export const Navbar = styled.nav`
         cursor: pointer;
     }
 
-    .middle ul li:hover{
+    .middle a:hover{
     color: #360966;
-    transform: scale(1.07);
+    transform: scale(1.1);
     }
+
+    .about a{
+    color: black;
+    }
+
+     .about a:hover{
+    color: #360966;
+    transform: scale(1.1);
+     }
+
+
+     .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+     }
+
+     .openabouton{
+            display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        padding: 10px 20px;
+        color: whitesmoke;
+        background-color: #ff4612;
+        /* align-items: center; */
+        text-align: center;
+        z-index: 10;
+     }
+     .openabout{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        padding: 10px 20px;
+        width: 280px;
+        background-color: #ff4612;
+        /* align-items: center; */
+        text-align: center;
+     }
+
+     .openabout a{
+      color: whitesmoke;
+     }
+     .openabouton a{
+            color: whitesmoke;
+     }
 
     
 
@@ -639,5 +691,71 @@ export const Footers = styled.footer`
         padding: 10px 10px;
         cursor: pointer;
     }
+
+    .bottom{
+       background-color: #050505;
+    }
+
+    .bottom .Copyright©{
+        display: flex;
+        color: whitesmoke;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        font-size: 40px;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0px;
+    }
 `
 
+
+
+
+
+
+export const Aboutus = styled.main`
+
+font-family: var(--font-geist-sans);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+
+  .background {
+    position: fixed; /* full-page background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2; /* behind content */
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    color: white; /* make text visible */
+  }
+
+  .aboutus{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .aboutus h1{
+    font-size: 30px;
+    color: whitesmoke;
+    font-weight: 800;
+  }
+
+`

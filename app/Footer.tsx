@@ -1,5 +1,14 @@
 "use client"
 import {Footers} from './styles'
+import { FaCcVisa,FaCcDiscover,FaCcStripe } from "react-icons/fa";
+import { SiAmericanexpress } from "react-icons/si";
+
+
+
+
+
+
+
 export default  function Footer() {
     
     return(
@@ -52,6 +61,24 @@ export default  function Footer() {
 
                </div>
             </div>
+        
+
+          <div className="bottom">
+            <div className='Copyright©'>
+                <div >
+                <span>Copyright© Amplified Insurance & Security Company | All Rights Reserved</span>
+            </div>
+
+            <div className='cards'>
+            <span>< FaCcVisa/></span>
+            <span>< SiAmericanexpress/></span>
+            <span>< FaCcDiscover/></span>
+            <span>< FaCcStripe/></span>
+            </div>
+            </div>
+          </div>
+
+
 
         </Footers>
     );}
