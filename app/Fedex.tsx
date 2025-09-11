@@ -13,19 +13,19 @@ export default function Fedex(){
       <div className="mainotthercourir">
               <div className="otthercourir">
         <div>
-         <B src="/image/brnad_logo01.png" alt="DHL" width={100} height={50}  priority />
+         <B src="/image/brnad_logo01.png" alt="DHL" width={80} height={50}  priority />
         </div>
         <div>
-         <Brna src="/image/brnad_logo02.png" alt="DHL" width={100} height={50}  priority />
+         <Brna src="/image/brnad_logo02.png" alt="DHL" width={80} height={50}  priority />
         </div>
         <div>
-         <Brn src="/image/brnad_logo03.png" alt="DHL" width={100} height={50}  priority />
+         <Brn src="/image/brnad_logo03.png" alt="DHL" width={80} height={50}  priority />
         </div>
         <div>
-         <Brnad src="/image/brnad_logo04.png" alt="DHL" width={100} height={50}  priority />
+         <Brnad src="/image/brnad_logo04.png" alt="DHL" width={80} height={50}  priority />
         </div>
         <div>
-         <Br src="/image/brnad_logo05.png" alt="DHL" width={100} height={50}  priority />
+         <Br src="/image/brnad_logo05.png" alt="DHL" width={80} height={50}  priority />
         </div>
 
       </div>

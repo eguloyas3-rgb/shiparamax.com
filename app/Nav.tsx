@@ -21,6 +21,12 @@ export default function Nav() {
   const Trackingdowp = () => {
     setTracking(prev => !prev)
   }
+
+  const Closeall = () => {
+    setDropdown(false)
+    setService(false)
+    setTracking(false)
+  }
   
 
 
@@ -43,7 +49,7 @@ export default function Nav() {
 
         <div className="middle">
 
-          <Link href=''>Home</Link>
+          <Link onClick={Closeall} href='/'>Home</Link>
 
           <div className="about" onClick={() => {setService(false)}}>
           <p onClick={() => {Aboutdrop(); setTracking(false)}}>About</p>
@@ -63,7 +69,7 @@ export default function Nav() {
             <Link href=''>Cargo Transportation</Link>
             <Link href=''>Air Freight</Link>
             <Link href=''>Ocean Freight</Link>
-            <Link href=''>Packaging and Storage</Link>
+            <Link href='/packaging'>Packaging and Storage</Link>
             
            </div>
           )}
@@ -80,7 +86,7 @@ export default function Nav() {
           )}
 
           </div>
-           <Link href=''>Contact Us</Link>
+           <Link onClick={Closeall} href=''>Contact Us</Link>
         </div>
 
         <div className="right">

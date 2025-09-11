@@ -2,6 +2,8 @@
 import { Aboutus } from "../styles";
 import Imag from "next/image";
 import Myabout from "next/image";
+import Comment from '../comment'
+import Deliverynything from '../deliveryanything'
 
 export default function Faq() {
   return (
@@ -19,9 +21,9 @@ export default function Faq() {
       </div>
 
       <div className="mainabout">
-       <div>
-                <div>
-          <Myabout src="/image/about_img01.png" alt="About" width={300} height={130}  priority/>
+       <div className="myabouthere">
+     <div className="imags">
+          <Myabout src="/image/about_img01.png" alt="About" width={500} height={200}  priority/>
         </div>
 
         <div className="about-section">
@@ -55,6 +57,10 @@ export default function Faq() {
           </p>
         </div>
        </div>
+      </div>
+      <Comment/>
+       <div style={{backgroundColor: 'whitesmoke'}}>
+        <Deliverynything />
       </div>
     </Aboutus>
   );

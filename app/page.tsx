@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import React, {useState} from "react";
 import { BsTrainFreightFront } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaShieldAlt } from "react-icons/fa";
@@ -11,13 +10,9 @@ import  Whoarewe  from "next/image";
 import Boxig from "next/image";
 import Boxi from "next/image";
 import Box from "next/image";
-import { CiStar } from "react-icons/ci";
-import Tony from "next/image";
-import { IoLocation, IoPersonSharp} from "react-icons/io5";
-import Luna from "next/image";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
-import { SlLike } from "react-icons/sl";
 import Track from "next/image";
+import Comment from './comment'
+import Deliverynything from './deliveryanything'
 
 
 
@@ -28,9 +23,7 @@ import Track from "next/image";
 
 
 export default function Home() {
-  const [current, setCurrent] = useState(0);
-  const next = () => setCurrent((prev) => (prev === 1 ? 0 : prev + 1)); // change 1 to number of reviews -1
-  const prev = () => setCurrent((prev) => (prev === 0 ? 1 : prev - 1));
+
 
 
   return (
@@ -150,112 +143,11 @@ When it comes to logistics, timely delivery is crucial for the success of your b
       </div>
 
 
-    <div className="review">
-      {/* Review 1 */}
-      <div style={{ display: current === 0 ? "block" : "none" }} className="myreview">
-        <div className="tipic">
-          <p>Happy Customer Quotes</p>
-          <h2>Our Top Reviews</h2>
-        </div>
-        <div className="cargoship">
-          <p>shipping Cargo</p>
-          <div className="stars">
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-          </div>
-          <p>I’ve been using this Cargo delivery for my deliveries, and I’m genuinely impressed...</p>
-          <div className="comments">
-            <div>
-              <Tony src="/image/testi_avatar01.png" alt="Tony" width={80} height={80} priority />
-            </div>
-            <div className="nameofcomment">
-              <span>Tony Alexander</span>
-              <span>Business Person</span>
-            </div>
-          </div>
-        </div>
-      </div>
+   <Comment />
 
-      {/* Review 2 */}
-      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
-        <div className="tipic">
-          <p>Happy Customer Quotes</p>
-          <h2>Our Top Reviews</h2>
-        </div>
-        <div className="cargoship">
-          <p>Fast & Reliable</p>
-          <div className="stars">
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-            <span><CiStar /></span>
-          </div>
-          <p>This shipping service is amazing! Packages always arrive on time...</p>
-          <div className="comments">
-            <div>
-              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
-            </div>
-            <div className="nameofcomment">
-              <span>Luna Dexander</span>
-              <span>E-commerce</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation */}
-      <div className="navigatecomment">
-        <span onClick={prev}><FaChevronLeft /></span>
-        <span onClick={next}><FaChevronRight /></span>
-      </div>
-    </div>
+   <Deliverynything />
 
 
-    <div className="DeliverAnything">
-       <div className="DeliverAny">
-        <p>Deliver Anything</p>
-      <h1>Our Service</h1>
-
-       </div>
-      <div className="freightmain">
-
-        <div className="freight">
-          <span className="icons"><FaBox /></span>
-          <div>
-            <p>Road Freight</p>
-            <span>When it comes to transporting goods, road freight is a versatile and cost-effective solution that offers flexibility and convenience.</span>
-          </div>
-        </div>
-
-        <div className="freight">
-          <span className="icons"><IoLocation /></span>
-          <div>
-            <p>Air Freight</p>
-            <span>Global Air Freight Network: With an extensive global network of airline partners and agents, we have the capability to handle air freight shipments to and from virtually any destination worldwide.</span>
-          </div>
-        </div>
-
-        <div className="freight">
-          <span className="icons"><SlLike /></span>
-          <div>
-            <p>Ocean Freight</p>
-            <span>When it comes to transporting large quantities of goods across long distances, ocean freight is a trusted and cost-effective solution. At Amplified Insurance & Security Company., we specialize in providing reliable.</span>
-          </div>
-        </div>
-
-        <div className="freight">
-          <span className="icons"><IoPersonSharp /></span>
-          <div>
-            <p>Packaging & Storage</p>
-            <span>When it comes to transporting large quantities of goods across long distances, ocean freight is a trusted and cost-effective solution. At Amplified Insurance & Security Company., we specialize in providing reliable</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
 
 
 

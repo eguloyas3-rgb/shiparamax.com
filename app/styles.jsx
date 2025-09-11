@@ -444,7 +444,52 @@ opacity: .7;
 
 
 
-     .review{
+     .extrafeatures{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        padding: 40px 0px;
+     }
+
+
+     .Extra{
+  flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+     }
+
+     .Extra span{
+        color: #ff4612;
+        font-weight: 700;
+     }
+     .Extra p{
+        opacity: .7;
+        /* font-weight: 700; */
+     }
+     .Extra h1{
+        color: #4e148c;
+        font-weight: 700;
+        font-size: 25px;
+     }
+
+     .imagesdelivery{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+     }
+
+
+
+   
+`
+
+
+export const Commets = styled.main`
+    
+         .review{
         background-color: #010048;
         padding: 30px 0px;
         color: whitesmoke;
@@ -524,9 +569,11 @@ opacity: .7;
         color: green;
         transform: scale(1.09);
      }
+`
 
-
-     .DeliverAnything{
+export const Deloveryeverything = styled.main`
+    
+    .DeliverAnything{
         padding: 40px 0px;
         width: 80%;
         margin: auto;
@@ -583,52 +630,7 @@ opacity: .7;
         color:#010048;
     
      }
-
-
-
-     .extrafeatures{
-        width: 80%;
-        margin: auto;
-        display: flex;
-        padding: 40px 0px;
-     }
-
-
-     .Extra{
-  flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-     }
-
-     .Extra span{
-        color: #ff4612;
-        font-weight: 700;
-     }
-     .Extra p{
-        opacity: .7;
-        /* font-weight: 700; */
-     }
-     .Extra h1{
-        color: #4e148c;
-        font-weight: 700;
-        font-size: 25px;
-     }
-
-     .imagesdelivery{
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-     }
-
-
-
-   
 `
-
-
 
 
 export const Fedes = styled.main`
@@ -761,13 +763,129 @@ font-family: var(--font-geist-sans);
 
   .mainabout{
     color: black;
-    background-color: whitesmoke;
+    background-color: lightgray;
     margin-top: 4rem;
+     padding: 20px 20px;
   }
 
-  .mainabout div{
+  .mainabout .myabouthere{
     width: 80%;
+    padding: 20px 20px;
+    border-radius: 20px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    align-items: center;
+    box-shadow: 4px 4px 8px;
   }
+
+  .about-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imags{
+    flex: 1;
+  }
+
+`
+
+
+
+export const Packings = styled.main`
+
+    .Packaging{
+        width: 80%;
+        margin: auto;
+         padding: 20px 20px;
+    }
+
+    .suppot{
+        border: 1px solid;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 2rem;
+        background-color: #de2823;
+        color: whitesmoke;
+    }
+
+    .tops{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+          margin-bottom: 2rem;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .left div{
+        border-top: 0.1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       cursor: pointer;
+       padding: 10px 5px;
+       z-index: 20px;
+       position: relative;
+    }
+
+       .left div a:hover{ 
+       color: #ff4612;
+       }
+
+       .suppot button{
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+       }
+
+       
+       .suppot button:hover{
+        background-color: black;
+        color: whitesmoke;
+       }
+
+
+       .packaging-storage{
+        width: 100%;
+       right: 0;
+        padding: 20px 20px;
+       margin: 2rem auto;
+       display: flex;
+       flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 17px;
+       }
+
+       .packaging{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+       .storage{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       h2, h3, h4{
+        font-weight: 700;
+        font-size: 20px;
+        color: #de2823;
+       }
 
 `
