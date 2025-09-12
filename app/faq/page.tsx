@@ -56,7 +56,7 @@ export default function Faq(){
 
             <div className='themain'>
              
-             <div>
+             <div className='pttes'>
                 <p>Questions & Answers</p>
              </div>
 

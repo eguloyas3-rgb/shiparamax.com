@@ -1296,7 +1296,7 @@ export const FAQs = styled.main`
         font-size: 25px !important;
     }
 
-    p{
+    .pttes p{
         font-size: 20px !important;
     }
 
@@ -1306,6 +1306,101 @@ export const FAQs = styled.main`
 
  
    }
+`
+
+
+export const Cntacts = styled.main`
+    overflow: hidden;
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+
+    .image{
+        background-position: center;
+        background-image: center;
+        z-index: -1;
+    }
+
+    .contactsupt{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .contactsupt button{
+        background-color:#de2823;
+        color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .contactform{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       padding: 10px 10px;
+    }
+
+    form{
+        width: 40%;
+         background-color: rgba(245, 245, 245, 0.8);
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         padding: 20px 20px;
+    }
+
+    form h1{
+        font-size: 30px;
+    }
+
+    input{
+        padding: 10px 10px;
+        background-color: wheat;
+        width: 100%;
+    }
+
+    textarea{
+     padding: 10px 10px;
+        background-color: wheat;
+        width: 100%;
+    }
+
+    .sendmess button{
+        width: 100%;
+                background-color:#de2823;
+        color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+
+    @media screen and (max-width: 900px) {
+        
+        .contactsupt{
+            height: 100% !important;
+            padding: 30px 0px;
+        }
+
+        .contactsupt button{
+          font-size: 20px;
+        }
+        .contactform{
+            width: 100%;
+        }
+
+        form{
+            width: 95%;
+        }
+    }
+
 `
 
 
@@ -1402,10 +1497,27 @@ font-family: var(--font-geist-sans);
         color: #de2823;
        }
 
+
+       @media screen and (max-width: 900px) {
+        
+        .Packaging{
+            width: 100%;
+        }
+        .tops{
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+
+        .packaging-storage{
+            width: 100% !important;
+        }
+
+        .container{
+            width: 100% !important;
+        }
+       }
+
 `
-
-
-
 
 
 
@@ -1555,16 +1667,11 @@ export const Oceanic = styled.main`
 `
 
 
-
-
-
-
-
 export const Trackins = styled.main`
     
          font-family: var(--font-geist-sans);
      width: 100%;
-     height: 100vh;
+     /* height: 100vh; */
      overflow: hidden;
      position: relative;
      background-color: transparent;
@@ -1626,80 +1733,27 @@ export const Trackins = styled.main`
         cursor: pointer;
         color: whitesmoke;
      }
+
+     @media screen and (max-width: 900px) {
+        .Mains{
+            height: 100%;
+            padding: 20px 0px;
+        }
+
+        form{
+            width: 100%;
+            padding: 20 0pxpx;
+            background-color: rgba(255, 255, 255, 0) !important;
+        }
+
+        .topis h1{
+            display: none;
+        }
+        .topis p{
+                      font-size: 30px;
+            font-weight: 900;
+        }
+     }
 `
 
 
-
-export const Cntacts = styled.main`
-    overflow: hidden;
-    /* height: 100vh; */
-    width: 100%;
-    position: relative;
-    background-color: transparent;
-
-    .image{
-        background-position: center;
-        background-image: center;
-        z-index: -1;
-    }
-
-    .contactsupt{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 100px;
-    }
-
-    .contactsupt button{
-        background-color:#de2823;
-        color: whitesmoke;
-        padding: 10px 20px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .contactform{
-        display: flex ;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       padding: 10px 10px;
-    }
-
-    form{
-        width: 40%;
-         background-color: rgba(245, 245, 245, 0.8);
-         display: flex;
-         flex-direction: column;
-         gap: 10px;
-         padding: 20px 20px;
-    }
-
-    form h1{
-        font-size: 30px;
-    }
-
-    input{
-        padding: 10px 10px;
-        background-color: wheat;
-        width: 100%;
-    }
-
-    textarea{
-     padding: 10px 10px;
-        background-color: wheat;
-        width: 100%;
-    }
-
-    .sendmess button{
-        width: 100%;
-                background-color:#de2823;
-        color: whitesmoke;
-        padding: 10px 20px;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-`
