@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { LuKeyboard } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
+import { FiMenu } from "react-icons/fi";
 
 
 
@@ -56,6 +57,10 @@ export default function Nav() {
             />
           </div>
         </div>
+
+            <div className="menubar">
+            <FiMenu />
+          </div>
 
         <div className="middle">
 

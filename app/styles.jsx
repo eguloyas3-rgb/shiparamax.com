@@ -71,6 +71,11 @@ export const Headerss = styled.header`
     rotate: calc(60deg);
     transform: scale(1.6);
    }
+
+
+   @media screen and (max-width: 900px) {
+      display: none;
+   }
    
 `
 
@@ -92,6 +97,10 @@ export const Navbar = styled.nav`
 
     .images{
         cursor: pointer;
+    }
+
+    .menubar{
+        display: none;
     }
 
     .images:hover{
@@ -234,6 +243,23 @@ export const Navbar = styled.nav`
         padding: 10px 10px;
         font-size: 17px;
         color: whitesmoke;
+    }
+
+
+    @media screen and (max-width: 900px) {
+     
+        .menubar{
+            display: block;
+            font-size: 30px;
+        }
+
+        .middle{
+            display: none;
+        }
+
+        .right{
+            display: none;
+        }
     }
 
 
@@ -532,6 +558,81 @@ opacity: .7;
      }
 
 
+
+     @media screen and (max-width: 900px) {
+         
+        .middlewrite{
+            width: 95% !important;
+            height: 100% !important;
+            margin-top: 3rem;
+        }
+        .track span{
+            font-size: 15px !important;
+        }
+
+        .trackinID{
+            width: 70% !important;
+            flex-direction: column;
+        }
+        .trackinID input{
+            width: 100% !important;
+            padding: 12px 15px !important;
+        }
+          .trackinID button{
+            width: 40% !important;
+            margin: auto;
+          }
+
+
+          
+
+          .shipment{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px !important;
+
+          }
+
+
+          .main{
+            width: 95% !important;
+            flex-direction: column;
+          
+          }
+
+          .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .whoare{
+  align-items: center !important;
+  text-align: center;
+          }
+
+
+          .Delivery{
+            width: 100%;
+          }
+          .deliver{
+            text-align: center;
+            width: 95% !important;
+          }
+
+          .fastdeliry{
+            width: 100% !important;
+          }
+
+          .fast{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 95% !important;
+          }
+
+        
+        
+     }
 
    
 `
