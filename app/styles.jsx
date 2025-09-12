@@ -1196,7 +1196,8 @@ export const Fligtht = styled.main`
         
     }
     h1{
-        font-size: 20px;
+        font-size: 25px !important;
+        text-align: center;
     }
 
     .Packaging{
@@ -1211,6 +1212,101 @@ export const Fligtht = styled.main`
 `
 
 
+export const FAQs = styled.main`
+      position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--font-geist-sans);
+
+
+    .imgas{
+        z-index: -1;
+        background-image: cover;
+        background-position: center;
+        /* width: 100%; */
+       
+    }
+
+    .faq{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+   .faq h1{
+    color: whitesmoke ;
+    font-size: 30px;
+    font-weight: 700;
+   }
+
+   .skquestion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+    
+   
+   }
+
+   .themain{
+        display: flex;
+        background-color: whitesmoke;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 2rem;
+    padding: 40px 30px;
+    border-radius: 30px;
+   }
+
+   .skquestion h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 10px;
+   }
+
+   .askquestions{
+    display: flex;
+    justify-content: space-between;
+      cursor: pointer;
+   }
+
+
+   .peopelask{
+    border: 1px solid lightgray;
+    padding: 20px 20px;
+    border-radius: 40px;
+   }
+
+
+   @media screen and (max-width: 900px) {
+    
+       .faq{
+        height: 100% !important;
+        padding: 70px 40px;
+    }
+
+    h1{
+        font-size: 25px !important;
+    }
+
+    p{
+        font-size: 20px !important;
+    }
+
+    .skquestion{
+        width: 95%;
+    }
+
+ 
+   }
+`
 
 
 export const Packings = styled.main`
@@ -1310,78 +1406,6 @@ font-family: var(--font-geist-sans);
 
 
 
-export const FAQs = styled.main`
-      position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  z-index: 1;
-  font-family: var(--font-geist-sans);
-
-
-    .imgas{
-        z-index: -1;
-        background-image: cover;
-        background-position: center;
-        width: 100%;
-       
-    }
-
-    .faq{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100%;
-    }
-
-   .faq h1{
-    color: whitesmoke ;
-    font-size: 30px;
-    font-weight: 700;
-   }
-
-   .skquestion{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 60%;
-    margin: auto;
-    
-   
-   }
-
-   .themain{
-        display: flex;
-        background-color: whitesmoke;
-    flex-direction: column;
-    gap: 10px;
-    margin-block: 2rem;
-    padding: 40px 30px;
-    border-radius: 30px;
-   }
-
-   .skquestion h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 10px 10px;
-   }
-
-   .askquestions{
-    display: flex;
-    justify-content: space-between;
-      cursor: pointer;
-   }
-
-
-   .peopelask{
-    border: 1px solid lightgray;
-    padding: 20px 20px;
-    border-radius: 40px;
-   }
-`
 
 
 
