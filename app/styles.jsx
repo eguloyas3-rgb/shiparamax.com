@@ -186,6 +186,56 @@ export const Navbar = styled.nav`
         transform: scale(1.04);
     }
 
+    form div span{
+     background-color: #ff4612;
+      color: whitesmoke;
+      padding: 10px 10px;
+      border-radius: 10px;
+     
+    }
+
+
+    .quotes{
+        position: absolute;
+        z-index: 10;
+        color: whitesmoke;
+        width: 100%;
+    }
+
+    .quotes form{
+        width: 40%;
+        margin: auto;
+        margin-top: 4rem;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        align-items: center;
+        padding: 30px 40px;
+    }
+
+    input{
+        width: 100%;
+        padding: 10px 10px;
+        border:  1px solid lightgray;
+        margin-block: 10px;
+    }
+
+    textarea{
+        width: 100%;
+        border: 1px solid lightgray;
+        margin-block: 10px;
+        padding: 20px 10px;
+
+    }
+
+    form div button{
+        background-color: #ff4612;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 17px;
+        color: whitesmoke;
+    }
+
 
 `
 
@@ -1282,9 +1332,7 @@ export const Trackins = styled.main`
  
      }
 
-     label{
-        color: green;
-     }
+     
 
      .Mains{
         display: flex;
@@ -1295,16 +1343,15 @@ export const Trackins = styled.main`
      }
 
      form{
-        background-color: rgba(245, 245, 245, 0.8); /* 0.8 = 80% opacity */
-
-        width: 30%;
+        background-color: whitesmoke; 
+        width: 50%;
         margin: auto;
         align-items: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 15px;
-        padding: 20px 20px;
+        padding: 40px 20px;
      }
 
      .topis h1{
@@ -1331,4 +1378,80 @@ export const Trackins = styled.main`
         cursor: pointer;
         color: whitesmoke;
      }
+`
+
+
+
+export const Cntacts = styled.main`
+    overflow: hidden;
+    /* height: 100vh; */
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+
+    .image{
+        background-position: center;
+        background-image: center;
+        z-index: -1;
+    }
+
+    .contactsupt{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .contactsupt button{
+        background-color:#de2823;
+        color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .contactform{
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       padding: 10px 10px;
+    }
+
+    form{
+        width: 40%;
+         background-color: rgba(245, 245, 245, 0.8);
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         padding: 20px 20px;
+    }
+
+    form h1{
+        font-size: 30px;
+    }
+
+    input{
+        padding: 10px 10px;
+        background-color: wheat;
+        width: 100%;
+    }
+
+    textarea{
+     padding: 10px 10px;
+        background-color: wheat;
+        width: 100%;
+    }
+
+    .sendmess button{
+        width: 100%;
+                background-color:#de2823;
+        color: whitesmoke;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
 `
