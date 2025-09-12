@@ -1750,8 +1750,9 @@ export const Trackins = styled.main`
             display: none;
         }
         .topis p{
-                      font-size: 30px;
+        font-size: 30px;
             font-weight: 900;
+            color: #ff4612;
         }
      }
 `
