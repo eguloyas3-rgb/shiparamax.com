@@ -796,7 +796,7 @@ font-family: var(--font-geist-sans);
 
 
 export const Packings = styled.main`
-
+font-family: var(--font-geist-sans);
     .Packaging{
         width: 80%;
         margin: auto;
@@ -888,4 +888,447 @@ export const Packings = styled.main`
         color: #de2823;
        }
 
+`
+
+
+
+export const FAQs = styled.main`
+      position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+  font-family: var(--font-geist-sans);
+
+
+    .imgas{
+        z-index: -1;
+        background-image: cover;
+        background-position: center;
+        width: 100%;
+       
+    }
+
+    .faq{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+   .faq h1{
+    color: whitesmoke ;
+    font-size: 30px;
+    font-weight: 700;
+   }
+
+   .skquestion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+    
+   
+   }
+
+   .themain{
+        display: flex;
+        background-color: whitesmoke;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 2rem;
+    padding: 40px 30px;
+    border-radius: 30px;
+   }
+
+   .skquestion h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 10px;
+   }
+
+   .askquestions{
+    display: flex;
+    justify-content: space-between;
+      cursor: pointer;
+   }
+
+
+   .peopelask{
+    border: 1px solid lightgray;
+    padding: 20px 20px;
+    border-radius: 40px;
+   }
+`
+
+
+
+export const Oceanic = styled.main`
+     font-family: var(--font-geist-sans);
+     width: 100%;
+     /* height: 100vh; */
+     overflow: hidden;
+     position: relative;
+     background-color: transparent;
+     
+     
+
+     .images{
+    top: 0;
+    left: 0;
+    background-image: cover;
+    background-position: center;
+    z-index: -1;
+ 
+     }
+
+
+     .manin{
+        color: whitesmoke;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        flex-direction: column;
+        gap: 20px;
+     }
+
+     .oceanbutton{
+         background-color: #ff4612;
+        padding: 10px 20px;
+        font-size: 20px;
+     }
+
+     .manin h1{
+        font-size: 50px;
+        font-weight: 700;
+     }
+
+
+
+
+
+     .Packaging{
+        background: whitesmoke;
+     }
+
+
+     .mmytopi{
+        box-shadow: 3px 3px 6px;
+        padding: 35px 30px !important;
+     }
+
+ .suppot{
+        border: 1px solid;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 2rem;
+        background-color: #de2823;
+        color: whitesmoke;
+    }
+
+    .tops{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        width: 80%;
+        padding: 30px 10px;
+        margin: auto;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .left div{
+        border-top: 0.1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       cursor: pointer;
+       padding: 10px 5px;
+       z-index: 20px;
+       position: relative;
+    }
+
+       .left div a:hover{ 
+       color: #ff4612;
+       }
+
+       .suppot button{
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+       }
+
+       
+       .suppot button:hover{
+        background-color: black;
+        color: whitesmoke;
+       }
+
+
+       .packaging-storage{
+       right: 0;
+       width: 80%;
+       margin: auto;
+        padding: 50px 10px;
+       display: flex;
+       flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 17px;
+       }
+
+       .packaging{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+       .storage{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       h2, h3, h4{
+        font-weight: 700;
+        font-size: 20px;
+        color: #de2823;
+       }
+
+`
+
+
+
+
+export const Fligtht = styled.main`
+     font-family: var(--font-geist-sans);
+     width: 100%;
+     /* height: 100vh; */
+     overflow: hidden;
+     position: relative;
+     background-color: transparent;
+     
+
+
+     .images{
+    top: 0;
+    left: 0;
+    background-image: cover;
+    background-position: center;
+    z-index: -1;
+ 
+     }
+
+
+     .manin{
+        color: whitesmoke;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        flex-direction: column;
+        gap: 20px;
+     }
+
+     .oceanbutton{
+         background-color: #ff4612;
+        padding: 10px 20px;
+        font-size: 20px;
+     }
+
+     .manin h1{
+        font-size: 50px;
+        font-weight: 700;
+     }
+
+
+
+
+
+     .Packaging{
+        background: whitesmoke;
+     }
+
+
+     .mmytopi{
+        box-shadow: 3px 3px 6px;
+        padding: 35px 30px !important;
+     }
+
+ .suppot{
+        border: 1px solid;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 2rem;
+        background-color: #de2823;
+        color: whitesmoke;
+    }
+
+    .tops{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        width: 80%;
+        padding: 30px 10px;
+        margin: auto;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .left div{
+        border-top: 0.1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       cursor: pointer;
+       padding: 10px 5px;
+       z-index: 20px;
+       position: relative;
+    }
+
+       .left div a:hover{ 
+       color: #ff4612;
+       }
+
+       .suppot button{
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+       }
+
+       
+       .suppot button:hover{
+        background-color: black;
+        color: whitesmoke;
+       }
+
+
+       .packaging-storage{
+       right: 0;
+       width: 80%;
+       margin: auto;
+        padding: 50px 10px;
+       display: flex;
+       flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 17px;
+       }
+
+       .packaging{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+       .storage{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       h2, h3, h4{
+        font-weight: 700;
+        font-size: 20px;
+        color: #de2823;
+       }
+
+`
+
+
+
+export const Trackins = styled.main`
+    
+         font-family: var(--font-geist-sans);
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+     position: relative;
+     background-color: transparent;
+     
+
+
+     .images{
+    top: 0;
+    left: 0;
+    background-image: cover;
+    background-position: center;
+    z-index: -1;
+ 
+     }
+
+     label{
+        color: green;
+     }
+
+     .Mains{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+     }
+
+     form{
+        background-color: rgba(245, 245, 245, 0.8); /* 0.8 = 80% opacity */
+
+        width: 30%;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 20px;
+     }
+
+     .topis h1{
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+       color: #ff4612;
+     }
+     
+     .topis p{
+       font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+     }
+
+     input{
+        background-color: wheat;
+        padding: 10px 10px;
+     }
+
+     button{
+        background-color: #ff4612;
+        padding: 10px 10px;
+        cursor: pointer;
+        color: whitesmoke;
+     }
 `

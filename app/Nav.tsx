@@ -55,7 +55,7 @@ export default function Nav() {
           <p onClick={() => {Aboutdrop(); setTracking(false)}}>About</p>
           {dropdown && (
            <div className="openabouton">
-            <Link href=''>FAQ</Link>
+            <Link href='/faq'>FAQ</Link>
             <Link href='/about'>About</Link>
            </div>
         
@@ -66,9 +66,9 @@ export default function Nav() {
           <p onClick={() => {servicedrop(); setTracking(false);}}>Service</p>
           {service && (
            <div className="openabout">
-            <Link href=''>Cargo Transportation</Link>
-            <Link href=''>Air Freight</Link>
-            <Link href=''>Ocean Freight</Link>
+            <Link href='/car-go'>Cargo Transportation</Link>
+            <Link href='/air'>Air Freight</Link>
+            <Link href='/ocean'>Ocean Freight</Link>
             <Link href='/packaging'>Packaging and Storage</Link>
             
            </div>
@@ -80,13 +80,13 @@ export default function Nav() {
           <p onClick={() => {Trackingdowp(); setService(false);}}>Tracking</p>
           {tracking && (
            <div className="openabout">
-            <Link href=''>Tracking Your Order</Link>
-            <Link href='/About'>Sign-in</Link>
+            <Link href='/tracking'>Tracking Your Order</Link>
+            <Link href='/'>Sign-in</Link>
            </div>
           )}
 
           </div>
-           <Link onClick={Closeall} href=''>Contact Us</Link>
+           <Link onClick={Closeall} href='/contant'>Contact Us</Link>
         </div>
 
         <div className="right">
