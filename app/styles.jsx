@@ -267,9 +267,11 @@ export const Navbar = styled.nav`
             display: block;
             z-index: 10;
             background-color: white;
-            height: 100%;
+            height: calc(100vh + 1000px);
             right: 0;
             width: 70%;
+              /* position: fixed; */
+              top: 10%;
         }
 
         .mobilenabar div{
@@ -954,7 +956,7 @@ export const Aboutus = styled.main`
 font-family: var(--font-geist-sans);
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   overflow: hidden;
   z-index: 1;
 
@@ -978,7 +980,7 @@ font-family: var(--font-geist-sans);
     justify-content: center;
     align-items: center;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
   }
 
   .aboutus h1{
@@ -1016,6 +1018,26 @@ font-family: var(--font-geist-sans);
 
   .imags{
     flex: 1;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    
+    .background{
+        height: 100% !important;
+    }
+
+    .aboutus{
+        height: 20vh !important;
+    }
+
+    .myabouthere{
+        width: 100% !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
   }
 
 `
