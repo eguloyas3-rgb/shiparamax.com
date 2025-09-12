@@ -121,7 +121,7 @@ export default function Nav() {
       {/* mobile view */}
     
         {dropMenue && (
-            <div className="mobilenabar">
+            <div className="mobilenabar" onScroll={() => {setDropMenue(false)}}>
                <div>
          <Link onClick={() => {setDropMenue(false)}} href='/'>Home</Link>
         <Link onClick={() => {setDropMenue(false)}}  href='/faq'>FAQ</Link>

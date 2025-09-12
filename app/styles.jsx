@@ -79,9 +79,6 @@ export const Headerss = styled.header`
    
 `
 
-
-
-
 export const Navbar = styled.nav`
     box-shadow: 2px 2px 4px;
     padding: 10px 10px;
@@ -294,10 +291,6 @@ export const Navbar = styled.nav`
 
 
 `
-
-
-
-
 
 export const Homepages = styled.main`
 font-family: var(--font-geist-sans); 
@@ -675,7 +668,6 @@ opacity: .7;
    
 `
 
-
 export const Commets = styled.main`
     
          .review{
@@ -832,7 +824,6 @@ export const Deloveryeverything = styled.main`
      }
 `
 
-
 export const Fedes = styled.main`
     
     
@@ -863,7 +854,6 @@ export const Fedes = styled.main`
 
      }
 `
-
 
 export const Footers = styled.footer`
     background-color: #222;
@@ -957,10 +947,6 @@ export const Footers = styled.footer`
         }
     }
 `
-
-
-
-
 
 
 export const Aboutus = styled.main`
