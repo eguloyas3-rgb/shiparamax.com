@@ -271,7 +271,7 @@ export const Navbar = styled.nav`
             right: 0;
             width: 70%;
               /* position: fixed; */
-              top: 10%;
+              top: 7%;
         }
 
         .mobilenabar div{
@@ -1042,6 +1042,175 @@ font-family: var(--font-geist-sans);
 
 `
 
+export const Fligtht = styled.main`
+     font-family: var(--font-geist-sans);
+     width: 100%;
+     /* height: 100vh; */
+     overflow: hidden;
+     position: relative;
+     background-color: transparent;
+     
+
+
+     .images{
+    top: 0;
+    left: 0;
+    background-image: cover;
+    background-position: center;
+    z-index: -1;
+ 
+     }
+
+
+     .manin{
+        color: whitesmoke;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        flex-direction: column;
+        gap: 20px;
+     }
+
+     .oceanbutton{
+         background-color: #ff4612;
+        padding: 10px 20px;
+        font-size: 20px;
+     }
+
+     .manin h1{
+        font-size: 50px;
+        font-weight: 700;
+     }
+
+
+
+
+
+     .Packaging{
+        background: whitesmoke;
+     }
+
+
+     .mmytopi{
+        box-shadow: 3px 3px 6px;
+        padding: 35px 30px !important;
+     }
+
+ .suppot{
+        border: 1px solid;
+        padding: 50px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 2rem;
+        background-color: #de2823;
+        color: whitesmoke;
+    }
+
+    .tops{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        width: 80%;
+        padding: 30px 10px;
+        margin: auto;
+    }
+    .left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .left div{
+        border-top: 0.1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       cursor: pointer;
+       padding: 10px 5px;
+       z-index: 20px;
+       position: relative;
+    }
+
+       .left div a:hover{ 
+       color: #ff4612;
+       }
+
+       .suppot button{
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        cursor: pointer;
+       }
+
+       
+       .suppot button:hover{
+        background-color: black;
+        color: whitesmoke;
+       }
+
+
+       .packaging-storage{
+       right: 0;
+       width: 80%;
+       margin: auto;
+        padding: 50px 10px;
+       display: flex;
+       flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 17px;
+       }
+
+       .packaging{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+       .storage{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       }
+
+       h2, h3, h4{
+        font-weight: 700;
+        font-size: 20px;
+        color: #de2823;
+       }
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .manin{
+        width: 100% !important;
+        height: 100%;
+        padding: 30px 0px;
+        
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    .Packaging{
+        width: 100%;
+    }
+
+    .tops{
+     flex-direction: column-reverse;
+     width: 100%;
+    }
+}
+`
+
+
 
 
 export const Packings = styled.main`
@@ -1364,150 +1533,6 @@ export const Oceanic = styled.main`
 
 
 
-export const Fligtht = styled.main`
-     font-family: var(--font-geist-sans);
-     width: 100%;
-     /* height: 100vh; */
-     overflow: hidden;
-     position: relative;
-     background-color: transparent;
-     
-
-
-     .images{
-    top: 0;
-    left: 0;
-    background-image: cover;
-    background-position: center;
-    z-index: -1;
- 
-     }
-
-
-     .manin{
-        color: whitesmoke;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 700;
-        flex-direction: column;
-        gap: 20px;
-     }
-
-     .oceanbutton{
-         background-color: #ff4612;
-        padding: 10px 20px;
-        font-size: 20px;
-     }
-
-     .manin h1{
-        font-size: 50px;
-        font-weight: 700;
-     }
-
-
-
-
-
-     .Packaging{
-        background: whitesmoke;
-     }
-
-
-     .mmytopi{
-        box-shadow: 3px 3px 6px;
-        padding: 35px 30px !important;
-     }
-
- .suppot{
-        border: 1px solid;
-        padding: 50px 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        flex-direction: column;
-        margin-top: 2rem;
-        background-color: #de2823;
-        color: whitesmoke;
-    }
-
-    .tops{
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        width: 80%;
-        padding: 30px 10px;
-        margin: auto;
-    }
-    .left{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-       
-    }
-
-    .left div{
-        border-top: 0.1px solid lightgray;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-       cursor: pointer;
-       padding: 10px 5px;
-       z-index: 20px;
-       position: relative;
-    }
-
-       .left div a:hover{ 
-       color: #ff4612;
-       }
-
-       .suppot button{
-        background-color: white;
-        color: black;
-        padding: 10px 10px;
-        cursor: pointer;
-       }
-
-       
-       .suppot button:hover{
-        background-color: black;
-        color: whitesmoke;
-       }
-
-
-       .packaging-storage{
-       right: 0;
-       width: 80%;
-       margin: auto;
-        padding: 50px 10px;
-       display: flex;
-       flex-direction: column;
-        text-align: center;
-        gap: 10px;
-        font-size: 17px;
-       }
-
-       .packaging{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-       }
-       .storage{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-       }
-
-       h2, h3, h4{
-        font-weight: 700;
-        font-size: 20px;
-        color: #de2823;
-       }
-
-`
 
 
 
