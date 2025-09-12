@@ -9,6 +9,8 @@ import { FiMenu } from "react-icons/fi";
 
 
 
+
+
 export default function Nav() {
  
   const [dropdown, setDropdown] = useState(false)
@@ -17,6 +19,12 @@ export default function Nav() {
 
 
   const [openQuote, setOpenQuote] = useState(false)
+
+  const [dropMenue, setDropMenue] = useState(false)
+
+  const dropmeue = () => {
+    setDropMenue(prev => !prev)
+  }
 
   const Aboutdrop = () => {
     setDropdown(prev => !prev)
@@ -58,8 +66,9 @@ export default function Nav() {
           </div>
         </div>
 
-            <div className="menubar">
-            <FiMenu />
+            <div className="menubar" onClick={dropmeue}>
+              {dropMenue ? <IoMdClose/>:<FiMenu /> }
+            
           </div>
 
         <div className="middle">
@@ -108,6 +117,31 @@ export default function Nav() {
             <button onClick={Openqute}><LuKeyboard /> Get A Quotes</button>
         </div>
       </div>
+      
+      {/* mobile view */}
+    
+        {dropMenue && (
+            <div className="mobilenabar">
+               <div>
+         <Link onClick={() => {setDropMenue(false)}} href='/'>Home</Link>
+        <Link onClick={() => {setDropMenue(false)}}  href='/faq'>FAQ</Link>
+        <Link onClick={() => {setDropMenue(false)}}  href='/about'>About</Link>
+           <Link onClick={() => {setDropMenue(false)}} href='/car-go'>Cargo Transportation</Link>
+            <Link onClick={() => {setDropMenue(false)}} href='/air'>Air Freight</Link>
+            <Link onClick={() => {setDropMenue(false)}} href='/ocean'>Ocean Freight</Link>
+            <Link onClick={() => {setDropMenue(false)}} href='/packaging'>Packaging and Storage</Link>
+       <Link onClick={() => {setDropMenue(false)}}  href='/tracking'>Tracking Your Order</Link>
+       <Link onClick={() => {setDropMenue(false)}} href='/contant'>Contact Us</Link>
+             <Link onClick={() => {setDropMenue(false)}}  href='/'>Sign-in</Link>
+                   <div className="right" onClick={() => {setDropMenue(false)}}>
+            <button onClick={Openqute}><LuKeyboard /> Get A Quotes</button>
+        </div>
+        
+       </div>
+        </div>
+        )}
+
+
 
       <div className="quotes">
          {openQuote && (

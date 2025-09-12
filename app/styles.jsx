@@ -246,6 +246,10 @@ export const Navbar = styled.nav`
     }
 
 
+    .mobilenabar{
+        display: none;
+    }
+
     @media screen and (max-width: 900px) {
      
         .menubar{
@@ -259,6 +263,32 @@ export const Navbar = styled.nav`
 
         .right{
             display: none;
+        }
+
+        .mobilenabar{
+            position: absolute;
+            display: block;
+            z-index: 10;
+            background-color: white;
+            height: 100%;
+            right: 0;
+            width: 70%;
+        }
+
+        .mobilenabar div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-block: 1rem;
+
+        }
+
+        a:hover{
+            color: #ff4612;
         }
     }
 
