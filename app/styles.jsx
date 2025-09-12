@@ -630,6 +630,14 @@ opacity: .7;
             width: 95% !important;
           }
 
+
+          .extrafeatures{
+            flex-direction: column-reverse;
+            width: 95% !important;
+            text-align: center;
+            gap: 30px;
+            margin-top: -3rem;
+          }
         
         
      }
@@ -781,6 +789,17 @@ export const Deloveryeverything = styled.main`
         color:#010048;
     
      }
+
+     @media screen  and (max-width: 900px){
+        
+        .DeliverAnything{
+            width: 95% !important;
+        }
+        .freightmain{
+            flex-direction: column;
+            width: 100% !important;
+        }
+     }
 `
 
 
@@ -798,6 +817,19 @@ export const Fedes = styled.main`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+     }
+
+     @media screen and (max-width: 900px){
+        
+        .otthercourir{
+            width: 95%;
+            
+        }
+
+        .imge{
+            width: 50px !important;
+        }
 
      }
 `
@@ -865,6 +897,34 @@ export const Footers = styled.footer`
         gap: 10px;
         align-items: center;
         padding: 10px 0px;
+    }
+
+    @media screen and (max-width: 900px) {
+        
+
+        .footers{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+        }
+
+        .subscribe{
+            display: flex;
+            width: 80%;
+        }
+
+        .bottom{
+            width: 100% !important;
+        }
+
+        .Copyright©{
+           font-size: 10px;
+            flex-direction: column;
+            width: 100% !important;
+            padding: 12px;
+        }
     }
 `
 
