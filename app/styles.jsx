@@ -1519,12 +1519,101 @@ font-family: var(--font-geist-sans);
 
 `
 
+export const Trackins = styled.main`
+    
+         font-family: var(--font-geist-sans);
+     width: 100%;
+     /* height: 100vh; */
+     overflow: hidden;
+     position: relative;
+     background-color: transparent;
+     
+
+
+     .images{
+    top: 0;
+    left: 0;
+    background-image: cover;
+    background-position: center;
+    z-index: -1;
+ 
+     }
+
+     
+
+     .Mains{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+     }
+
+     form{
+        background-color: whitesmoke; 
+        width: 50%;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 40px 20px;
+     }
+
+     .topis h1{
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+       color: #ff4612;
+     }
+     
+     .topis p{
+       font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+     }
+
+     input{
+        background-color: wheat;
+        padding: 10px 10px;
+     }
+
+     button{
+        background-color: #ff4612;
+        padding: 10px 10px;
+        cursor: pointer;
+        color: whitesmoke;
+     }
+
+     @media screen and (max-width: 900px) {
+        .Mains{
+            height: 100%;
+            padding: 20px 0px;
+        }
+
+        form{
+            width: 100%;
+            padding: 20 0pxpx;
+            background-color: rgba(255, 255, 255, 0) !important;
+        }
+
+        .topis h1{
+            display: none;
+        }
+        .topis p{
+        font-size: 30px;
+            font-weight: 900;
+            color: #ff4612;
+        }
+     }
+`
+
 
 
 export const Oceanic = styled.main`
      font-family: var(--font-geist-sans);
      width: 100%;
-     /* height: 100vh; */
      overflow: hidden;
      position: relative;
      background-color: transparent;
@@ -1664,97 +1753,36 @@ export const Oceanic = styled.main`
         color: #de2823;
        }
 
-`
 
-
-export const Trackins = styled.main`
-    
-         font-family: var(--font-geist-sans);
-     width: 100%;
-     /* height: 100vh; */
-     overflow: hidden;
-     position: relative;
-     background-color: transparent;
-     
-
-
-     .images{
-    top: 0;
-    left: 0;
-    background-image: cover;
-    background-position: center;
-    z-index: -1;
- 
-     }
-
-     
-
-     .Mains{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-     }
-
-     form{
-        background-color: whitesmoke; 
-        width: 50%;
-        margin: auto;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 40px 20px;
-     }
-
-     .topis h1{
-        font-weight: 700;
-        font-size: 40px;
-        text-align: center;
-       color: #ff4612;
-     }
-     
-     .topis p{
-       font-weight: 700;
-        font-size: 20px;
-        text-align: center;
-     }
-
-     input{
-        background-color: wheat;
-        padding: 10px 10px;
-     }
-
-     button{
-        background-color: #ff4612;
-        padding: 10px 10px;
-        cursor: pointer;
-        color: whitesmoke;
-     }
-
-     @media screen and (max-width: 900px) {
-        .Mains{
+       @media screen and (max-width: 900px) {
+        
+        .manin{
             height: 100%;
-            padding: 20px 0px;
+            padding: 40px 0px;
         }
 
-        form{
+        .manin h1{
+            font-size: 30px;
+        }
+        .manin button{
+            font-size: 20px;
+        }
+
+        .tops{
+            flex-direction: column-reverse;
             width: 100%;
-            padding: 20 0pxpx;
-            background-color: rgba(255, 255, 255, 0) !important;
         }
 
-        .topis h1{
-            display: none;
+        .packaging-storage{
+            width: 100% !important;
         }
-        .topis p{
-        font-size: 30px;
-            font-weight: 900;
-            color: #ff4612;
+        .container{
+            width: 100% !important;
         }
-     }
+       }
+
 `
+
+
 
 
