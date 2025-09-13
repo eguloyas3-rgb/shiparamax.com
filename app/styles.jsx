@@ -1789,3 +1789,20 @@ export const Oceanic = styled.main`
 
 
 
+
+export const Chatlive = styled.main`
+    position: fixed;
+    z-index: 100;
+    color: #1dad52;
+    right: 5%;
+    z-index: 9999;
+    bottom: 20%; 
+
+    a{
+        cursor: pointer;
+        font-size: 35px;
+        font-weight: 900;
+
+    }
+`
+
