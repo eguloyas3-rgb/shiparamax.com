@@ -52,7 +52,7 @@ export default  function Footer() {
                 <ul>
                     <li>30 Southwest Park, Westwood, MA 02090</li>
                     <li>Call Center</li>
-                    <li>+1 517-216-1274</li>
+                    <li>+1 725 - 304 (5857)</li>
                 </ul>
                  <div className='subscribe'>
                     <input type="text" name="" id="" placeholder='subscribe....'/>

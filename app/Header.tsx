@@ -24,7 +24,7 @@ export default function Header() {
                    <div className='left' >
                     <div className='phonecontact'>
                         <span><BiSupport /></span>
-                    <span>+1 517-216-1274</span>
+                    <span>+1 725 - 304 (5857)</span>
                    
                     </div>
                     <span>|</span>

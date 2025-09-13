@@ -249,6 +249,9 @@ export const Navbar = styled.nav`
 
     @media screen and (max-width: 900px) {
      
+        .main{
+        width: 95%;
+        }
         .menubar{
             display: block;
             font-size: 30px;
