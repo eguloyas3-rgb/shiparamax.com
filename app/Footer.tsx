@@ -66,7 +66,7 @@ export default  function Footer() {
           <div className="bottom">
             <div className='Copyright©'>
                 <div >
-                <span>Copyright© Amplified Insurance & Security Company | All Rights Reserved</span>
+                <span>Copyright© Shiparamalogistics  & Security Company | All Rights Reserved</span>
             </div>
 
             <div className='cards'>

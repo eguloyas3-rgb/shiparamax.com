@@ -59,8 +59,8 @@ export default function Nav() {
             className="images"
               src="/image/logo.png"
               alt="Logo"
-              width={70}
-              height={100}
+              width={150}
+              height={120}
               priority
             />
           </div>
