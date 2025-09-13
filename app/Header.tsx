@@ -35,7 +35,7 @@ export default function Header() {
                    </div>
                    <div className='address'>
                     <span><IoLocationSharp /></span>
-                    <span> Southwest Part, westwood, MA 02090</span>
+                    <span> 2 Woodward Ave, Rm 644, Detroit, MI 48226</span>
                    </div>
                 </div>
 
