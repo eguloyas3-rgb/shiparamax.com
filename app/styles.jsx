@@ -81,7 +81,7 @@ export const Headerss = styled.header`
 
 export const Navbar = styled.nav`
     box-shadow: 2px 2px 4px;
-    padding: 10px 10px;
+    padding: 20px 8px;
    font-family: var(--font-geist-sans); 
 
     .main{
@@ -248,9 +248,11 @@ export const Navbar = styled.nav`
     }
 
     @media screen and (max-width: 900px) {
-     
+
+      
         .main{
         width: 95%;
+    
         }
         .menubar{
             display: block;
@@ -1796,11 +1798,11 @@ export const Chatlive = styled.main`
     color: #1dad52;
     right: 5%;
     z-index: 9999;
-    bottom: 20%; 
+    bottom: 8%; 
 
     a{
         cursor: pointer;
-        font-size: 35px;
+        font-size: 55px;
         font-weight: 900;
 
     }
