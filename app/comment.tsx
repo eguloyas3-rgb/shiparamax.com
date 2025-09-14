@@ -71,6 +71,118 @@ export default function Comment() {
         </div>
       </div>
 
+      {/* Review 3 */}
+      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+        <div className="tipic">
+          <p>Happy Customer Quotes</p>
+          <h2>Our Top Reviews</h2>
+        </div>
+        <div className="cargoship">
+          <p>Fast & Reliable</p>
+          <div className="stars">
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+          </div>
+          <p>Excellent customer service and smooth delivery process....</p>
+          <div className="comments">
+            <div>
+              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+            </div>
+            <div className="nameofcomment">
+              <span>Michael Tan</span>
+              <span>Retail</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Review 4 */}
+      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+        <div className="tipic">
+          <p>Happy Customer Quotes</p>
+          <h2>Our Top Reviews</h2>
+        </div>
+        <div className="cargoship">
+          <p>Fast & Reliable</p>
+          <div className="stars">
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+          </div>
+          <p>Fast, reliable, and professional. I’m very satisfied!...</p>
+          <div className="comments">
+            <div>
+              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+            </div>
+            <div className="nameofcomment">
+              <span>Sara Johnson</span>
+              <span>Wholesaler</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Review 5 */}
+      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+        <div className="tipic">
+          <p>Happy Customer Quotes</p>
+          <h2>Our Top Reviews</h2>
+        </div>
+        <div className="cargoship">
+          <p>Fast & Reliable</p>
+          <div className="stars">
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+          </div>
+          <p>Shipping has never been this easy. Super impressed!...</p>
+          <div className="comments">
+            <div>
+              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+            </div>
+            <div className="nameofcomment">
+              <span>Emma Wilson</span>
+              <span>Startup Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Review 6 */}
+      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+        <div className="tipic">
+          <p>Happy Customer Quotes</p>
+          <h2>Our Top Reviews</h2>
+        </div>
+        <div className="cargoship">
+          <p>Fast & Reliable</p>
+          <div className="stars">
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+            <span><CiStar /></span>
+          </div>
+          <p>Packages arrive safely every time. Truly dependable..</p>
+          <div className="comments">
+            <div>
+              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+            </div>
+            <div className="nameofcomment">
+              <span>David Kim</span>
+              <span>Manufacturer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Navigation */}
       <div className="navigatecomment">
         <span onClick={prev}><FaChevronLeft /></span>
