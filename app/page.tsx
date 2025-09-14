@@ -59,7 +59,7 @@ export default function Home() {
 
     try {
       const res = await fetch(
-        `http://127.0.0.1:8000/tracking/${trackingId}/`
+        `https://courierbackend-1.onrender.com/tracking/${trackingId}/`
       );
       if (!res.ok) throw new Error("Invalid Tracking ID");
 
@@ -89,7 +89,7 @@ export default function Home() {
     
 
   useEffect(() => {
-    fetch("https://your-backend.onrender.com/ping/")
+    fetch("https://courierbackend-1.onrender.com/ping/")
       .catch((err) => console.log("Ping failed:", err));
   }, []);
 
