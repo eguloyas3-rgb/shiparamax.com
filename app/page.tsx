@@ -127,7 +127,13 @@ const gotofaq = () => {
 
 
 
-        {track && (
+ 
+
+
+        </div>
+      </div>
+
+             {track && (
         <div className="trackngpage">
           <div className="closetracking">
             <span onClick={() => {setTrack(null)}}><VscChromeClose /></span>
@@ -188,10 +194,6 @@ const gotofaq = () => {
   </div>
 )}
    
-
-
-        </div>
-      </div>
 
       <div className="shipment" data-aos="flip-left">
 

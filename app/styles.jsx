@@ -331,6 +331,7 @@ position: relative;
   border-radius: 20px;
 }
 
+
 .Shiparamatracking{
     display: flex;
     justify-content: space-between;
@@ -673,6 +674,14 @@ opacity: .7;
             gap: 30px;
             margin-top: -3rem;
           }
+
+
+    .trackngpage{
+        width: 90%;
+        /* right: 0; */
+        /* left: 0; */
+        top: 0%;
+    }
         
         
      }
