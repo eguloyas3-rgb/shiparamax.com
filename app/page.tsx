@@ -134,9 +134,9 @@ const gotofaq = () => {
       </div>
 
              {track && (
-        <div className="trackngpage">
+        <div className="trackngpage" onClick={() => {setTrack(null)}}>
           <div className="closetracking">
-            <span onClick={() => {setTrack(null)}}><VscChromeClose /></span>
+            <span ><VscChromeClose /></span>
           </div>
           <div className="Shiparamatracking">
             <span>Shiparama Tracking</span>
