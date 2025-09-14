@@ -39,6 +39,17 @@ export type TrackingPackage = {
 };
 
 
+const  AIR = () =>{
+  window.location.href = '/air'
+}
+const SEA = () =>{
+  window.location.href = '/ocean'
+}
+const  CARGO = () =>{
+  window.location.href = '/car-go'
+}
+
+
 
 
 
@@ -197,14 +208,18 @@ const gotofaq = () => {
 
       <div className="shipment" data-aos="flip-left">
 
-        <div>
+        <div onClick={SEA}>
           <span><BsTrainFreightFront /></span>
           <span>SEA FREIGHT</span>
         </div>
 
-        <div>
+        <div onClick={AIR}>
           <span><GiCommercialAirplane /></span>
           <span>AIR FREIGHT</span>
+        </div>
+          <div onClick={CARGO}>
+          <span><FaBox /></span>
+          <span>CARGO FREIGHT</span>
         </div>
         <div>
           <span><FaShieldAlt /></span>
@@ -214,10 +229,7 @@ const gotofaq = () => {
           <span><MdWarehouse /></span>
           <span>WAREHOUSE</span>
         </div>
-        <div>
-          <span><FaBox /></span>
-          <span>AIR FREIGHT</span>
-        </div>
+
       </div>
 
 
