@@ -138,8 +138,8 @@ const gotofaq = () => {
           </div>
           
           </div>
-         {packages?.length ? (  // <- optional chaining added here (packages?.length)
-      packages.map((pkg, index) => (  // <- make sure 'index' is declared here!
+         {packages?.length ? (  
+      packages.map((pkg, index) => (  
         <div key={index}>  
           <div className="updated">
             <div>
