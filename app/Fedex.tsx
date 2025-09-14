@@ -10,7 +10,7 @@ import {Fedes} from './styles'
 export default function Fedex(){
     return(
         <Fedes>
-      <div className="mainotthercourir">
+      <div className="mainotthercourir" data-aos="flip-left">
               <div className="otthercourir">
         <div>
          <B src="/image/brnad_logo01.png" alt="DHL" width={80} height={50} className="imge"  priority />

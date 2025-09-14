@@ -10,15 +10,15 @@ import {Deloveryeverything} from './styles'
 export default function Deliverynything() {
 
     return(
-        <Deloveryeverything>
+        <Deloveryeverything >
 
                 <div className="DeliverAnything">
-                   <div className="DeliverAny">
+                   <div className="DeliverAny" data-aos="zoom-out">
                     <p>Deliver Anything</p>
                   <h1>Our Service</h1>
             
                    </div>
-                  <div className="freightmain">
+                  <div className="freightmain" data-aos="fade-up">
             
                     <div className="freight">
                       <span className="icons"><FaBox /></span>

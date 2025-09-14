@@ -165,7 +165,7 @@ When it comes to logistics, timely delivery is crucial for the success of your b
 
     <div className="extrafeatures">
 
-      <div className="Extra">
+      <div className="Extra" data-aos="zoom-out">
         <span>Extra Features</span>
         <h1>Unbeatable Tracking and Transport <span>Services</span></h1>
         <div>
@@ -173,7 +173,7 @@ When it comes to logistics, timely delivery is crucial for the success of your b
         </div>
       </div>
 
-      <div className="imagesdelivery">
+       <div className="imagesdelivery">
         <Track src="/image/delivery_services_img.png" alt="delivery_services" width={300} height={200} priority />
       </div>
     </div>
