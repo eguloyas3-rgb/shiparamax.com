@@ -10,7 +10,7 @@ export const Navbar = styled.nav`
   top: 0;
   background: white;
   font-family: var(--font-geist-sans);
-  z-index: 1000;
+  z-index: 800;
 
     .main{
         width: 80%;
@@ -321,15 +321,64 @@ position: relative;
 
 .trackngpage {
   position: absolute;
-  background-color: white;
-  border: 1px solid black;
+  background-color: wheat;
   width: 40%;
   left: 50%;
   color: black;
   transform: translateX(-50%);
-  z-index: 100;
-  padding: 20px 20px;
-  top: 10%;
+  padding: 10px 20px;
+   z-index: 900 ;
+  border-radius: 20px;
+}
+
+.Shiparamatracking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff4612;
+   
+    
+}
+
+.closetracking{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
+    color: red;
+}
+
+.closetracking span{
+    font-size: 18px !important;
+    /* margin-bottom: 1rem; */
+}
+
+.Shiparamatracking span:nth-child(1){
+    font-size: 18px;
+    font-weight: 700;
+}
+.Shiparamatracking span:nth-child(2){
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.trackingnumbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-block: 1rem;
+    padding: 10px 0px;
+    font-weight: 800;
+    
+}
+
+.trackingnumbers > span{
+    font-size: 15px !important;
+    
 }
 
 

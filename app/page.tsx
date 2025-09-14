@@ -13,6 +13,8 @@ import Comment from './comment'
 import Deliverynything from './deliveryanything'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+   import { IoIosArrowForward } from "react-icons/io";
+     import { VscChromeClose } from "react-icons/vsc";
 
 
 
@@ -122,20 +124,25 @@ const gotofaq = () => {
           </div>
                       {loading && <p>Loading...</p>}
         
-     
+
+
+
         {track && (
-         <div className="trackngpage">
-          <div>
-            <span>Shiparama Tracking</span>
-            <span onClick={gotofaq}>FAQ</span>
+        <div className="trackngpage">
+          <div className="closetracking">
+            <span onClick={() => {setTrack(null)}}><VscChromeClose /></span>
           </div>
-          <div>
-          <div>
+          <div className="Shiparamatracking">
+            <span>Shiparama Tracking</span>
+            <span onClick={gotofaq}><span>FAQ </span> < IoIosArrowForward/></span>
+          </div>
+         
+          <div className="trackingnumbers">
            <span>Tracking Number:</span>
            <h2>{track?.tracking_id}</h2>
           </div>
           
-          </div>
+       
          {packages?.length ? (  
       packages.map((pkg: TrackingPackage, index: number) => (  
         <div key={index}>  
@@ -174,7 +181,7 @@ const gotofaq = () => {
         </div>
       ))
     ) : (
-      <p>No package updates yet.</p>
+      <p style={{padding: '20px 0px'}}>No package updates yet.</p>
     )}
 
 
