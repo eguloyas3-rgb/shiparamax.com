@@ -196,10 +196,9 @@ export const Navbar = styled.nav`
         }
 
         .mobilenabar{
-            position: absolute;
             display: block;
             z-index: 10;
-            background-color: white;
+            background: white;
             height: 100%;
             right: 0;
             width: 70%;

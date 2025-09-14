@@ -51,7 +51,7 @@ export default function Nav() {
 
 
   return (
-    <Navbar data-aos="fade-down">
+    <Navbar>
       <div className="main">
         <div className="left">
           <div className="logo">
@@ -121,7 +121,7 @@ export default function Nav() {
       {/* mobile view */}
     
         {dropMenue && (
-            <div className="mobilenabar" onScroll={() => {setDropMenue(false)}}>
+            <div className="mobilenabar" onScroll={() => {setDropMenue(false)}} data-aos="slide-left">
                <div>
          <Link onClick={() => {setDropMenue(false)}} href='/'>Home</Link>
         <Link onClick={() => {setDropMenue(false)}}  href='/faq'>FAQ</Link>
