@@ -305,6 +305,20 @@ position: relative;
      }
 
 
+     /* tracking pop up */
+
+.trackngpage {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  width: 40%;
+  left: 50%;
+  color: black;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+
 .shipment{
     width: 80%;
     margin: auto;
@@ -1741,5 +1755,5 @@ export const Chatlive = styled.main`
 
 export const Tracking = styled.main`
     
-    
+
 `

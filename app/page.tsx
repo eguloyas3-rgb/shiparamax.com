@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import { BsTrainFreightFront } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaShieldAlt } from "react-icons/fa";
@@ -21,10 +21,61 @@ import 'aos/dist/aos.css';
 
 
 
+// types.ts
+export type Track = {
+  tracking_id: string;
+};
+
+export type TrackingPackage = {
+  track: Track;
+  latest_update?: string;
+  Update_text?: string;
+  delivered_or_complain?: string;
+  Arrived_location?: string;
+  Arrived_location_date?: string;
+  Add_date_to_next_facility?: string;
+  package_arrived_at_Shiparama_Facility?: string;
+  package_arrived_at_Shiparama_Facility_date?: string;
+};
+
+
 
 
 
 export default function Home() {
+
+  const [trackingId, setTrackingId] = useState<string>("");
+  const [track, setTrack] = useState<Track | null>(null);
+  const [packages, setPackages] = useState<TrackingPackage[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  const handleTrack = async () => {
+    if (!trackingId) return alert("Please enter a tracking ID");
+
+    setLoading(true);
+    setTrack(null);
+    setPackages([]);
+
+    try {
+      const res = await fetch(
+        `http://127.0.0.1:8000/tracking/${trackingId}/`
+      );
+      if (!res.ok) throw new Error("Invalid Tracking ID");
+
+      const data: { track: Track; packages: TrackingPackage[] } =
+        await res.json();
+
+      setTrack(data.track);
+      setPackages(data.packages || []);
+    } catch (err) {
+      if (err instanceof Error){
+        alert(err.message)
+      }
+    } finally {
+      setLoading(false);
+    }
+  }
+
 
 
         useEffect(() => {
@@ -42,22 +93,57 @@ export default function Home() {
   }, []);
 
 
+
+  
+
+
   return (
     <Homepages>
       <div className="bakcimh">
         <Image src='/image/background.jpg' alt="background" fill className="images" />
       </div>
 
-      <form className="middlewrite" data-aos="zoom-in-up">
+      <div className="middlewrite" data-aos="zoom-in-up">
         <div className="track">
           <span>WELCOME TO Shiparamalogistics  & SECURITY COMPANY</span>
           <span>Unbeatable Tracking and Transport Service</span>
+
           <div className="trackinID">
-            <input type="text" name="" id="" placeholder="Tracking Id"/>
-            <button>TRACKING</button>
+            <input
+        type="text"
+        placeholder="Enter tracking ID"
+        value={trackingId}
+        onChange={(e) => setTrackingId(e.target.value)}
+      />
+            <button onClick={handleTrack}>TRACKING</button>
+
+
           </div>
+                      {loading && <p>Loading...</p>}
+        
+     
+        {track && (
+         <div className="trackngpage">
+          <h2>Tracking ID: {track?.tracking_id}</h2>
+          {packages.length > 0 ? (
+            packages.map((pkg, index) => (
+              <div key={index}>
+                <p>Latest Update: {pkg?.latest_update}</p>
+                <p>Status: {pkg?.delivered_or_complain}</p>
+                <p>Arrived Location: {pkg?.Arrived_location}</p>
+                <p>Arrived Date: {pkg?.Arrived_location_date}</p>
+              </div>
+            ))
+          ) : (
+            <p>No package updates yet.</p>
+          )}
         </div>
-      </form>
+      )}
+   
+
+
+        </div>
+      </div>
 
       <div className="shipment" data-aos="flip-left">
 
