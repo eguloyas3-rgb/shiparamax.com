@@ -49,12 +49,16 @@ export default function Nav() {
   setOpenQuote(prev => !prev)
  }
 
+ const Gotohome = () => {
+  window.location.href = "/"
+ }
+
 
   return (
     <Navbar>
       <div className="main">
         <div className="left">
-          <div className="logo">
+          <div className="logo" onClick={Gotohome}>
             <Ima
             className="images"
               src="/image/logo.png"

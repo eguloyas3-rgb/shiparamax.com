@@ -36,6 +36,10 @@ export default function Home() {
       }, []);
     
 
+  useEffect(() => {
+    fetch("https://your-backend.onrender.com/ping/")
+      .catch((err) => console.log("Ping failed:", err));
+  }, []);
 
 
   return (
