@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import Image from "next/image";
@@ -45,6 +46,7 @@ export default function Home() {
   const [track, setTrack] = useState<Track | null>(null);
   const [packages, setPackages] = useState<TrackingPackage[]>([]);
   const [loading, setLoading] = useState(false);
+
 
   const handleTrack = async () => {
     if (!trackingId) return alert("Please enter a tracking ID");
