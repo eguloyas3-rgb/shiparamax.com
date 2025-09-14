@@ -680,7 +680,11 @@ opacity: .7;
         width: 90%;
         /* right: 0; */
         /* left: 0; */
-        top: 0%;
+        top: 1%;
+    }
+
+    .closetracking span{
+        font-size: 25px !important;
     }
         
         
