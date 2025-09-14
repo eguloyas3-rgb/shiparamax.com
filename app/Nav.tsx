@@ -22,6 +22,38 @@ export default function Nav() {
 
   const [dropMenue, setDropMenue] = useState(false)
 
+
+
+   // State for form inputs
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+  
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  
+      // Send POST request
+      const res = await fetch("http://127.0.0.1:8000/contact/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+  
+      const data = await res.json();
+  
+      if (res.ok) {
+        alert("Message sent successfully!");
+        // Clear the form
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        alert("Error: " + JSON.stringify(data));
+      }
+    };
+
+
+
   const dropmeue = () => {
     setDropMenue(prev => !prev)
   }
@@ -108,7 +140,7 @@ export default function Nav() {
           <p onClick={() => {Trackingdowp(); setService(false);}}>Tracking</p>
           {tracking && (
            <div className="openabout">
-            <Link onClick={() => {setTracking(false)}} href='/tracking'>Tracking Your Order</Link>
+            <Link onClick={() => {setTracking(false)}} href='/'>Tracking Your Order</Link>
             <Link onClick={() => {setTracking(false)}} href='/'>Sign-in</Link>
            </div>
           )}
@@ -134,7 +166,7 @@ export default function Nav() {
             <Link onClick={() => {setDropMenue(false)}} href='/air'>Air Freight</Link>
             <Link onClick={() => {setDropMenue(false)}} href='/ocean'>Ocean Freight</Link>
             <Link onClick={() => {setDropMenue(false)}} href='/packaging'>Packaging and Storage</Link>
-       <Link onClick={() => {setDropMenue(false)}}  href='/tracking'>Tracking Your Order</Link>
+       <Link onClick={() => {setDropMenue(false)}}  href='/'>Tracking Your Order</Link>
        <Link onClick={() => {setDropMenue(false)}} href='/contant'>Contact Us</Link>
              <Link onClick={() => {setDropMenue(false)}}  href='/'>Sign-in</Link>
                    <div className="right" onClick={() => {setDropMenue(false)}}>
@@ -149,19 +181,42 @@ export default function Nav() {
 
       <div className="quotes">
          {openQuote && (
-          <form action="">
+          <form onSubmit={handleSubmit} action="">
           <div style={{marginBottom: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer'}}>
             <span>GET A FREE QUOTE</span>
             <span onClick={() => {setOpenQuote(false);}}><IoMdClose /></span>
           </div>
           <div>
-            <input type="text" name="" id="" placeholder="Name" />
+                        <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Fullname"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
           </div>
           <div>
-           <input type="text" name="" id="" placeholder="Email..."/>
+               <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
           <div>
-            <textarea name="" id="" placeholder="Message.."></textarea>
+                        <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
           </div>
           <div>
             <button>Send Message</button>

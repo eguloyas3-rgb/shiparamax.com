@@ -222,6 +222,18 @@ export const Navbar = styled.nav`
         a:hover{
             color: #ff4612;
         }
+
+
+        .quotes{
+            width: 95%;
+             
+        }
+
+        .quotes form{
+            width: 95%;
+            right: 0;
+            left: 0;
+        }
     }
 
 
@@ -305,7 +317,7 @@ position: relative;
      }
 
 
-     /* tracking pop up */
+/* tracking pop up */
 
 .trackngpage {
   position: absolute;
@@ -316,6 +328,8 @@ position: relative;
   color: black;
   transform: translateX(-50%);
   z-index: 100;
+  padding: 20px 20px;
+  top: 10%;
 }
 
 
@@ -1496,7 +1510,7 @@ export const Trackins = styled.main`
         height: 100vh;
      }
 
-     form{
+     .form{
         background-color: whitesmoke; 
         width: 50%;
         margin: auto;

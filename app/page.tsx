@@ -21,6 +21,7 @@ import 'aos/dist/aos.css';
 
 
 
+
 // types.ts
 export type Track = {
   tracking_id: string;
@@ -93,7 +94,9 @@ export default function Home() {
   }, []);
 
 
-
+const gotofaq = () => {
+  window.location.href = '/faq';
+}
   
 
 
@@ -124,15 +127,57 @@ export default function Home() {
      
         {track && (
          <div className="trackngpage">
-          <h2>Tracking ID: {track?.tracking_id}</h2>
+          <div>
+            <span>Shiparama Tracking</span>
+            <span onClick={gotofaq}>FAQ</span>
+          </div>
+          <div>
+          <div>
+           <span>Tracking Number:</span>
+           <h2>{track?.tracking_id}</h2>
+          </div>
+          
+          </div>
           {packages.length > 0 ? (
             packages.map((pkg, index) => (
               <div key={index}>
-                <p>Latest Update: {pkg?.latest_update}</p>
-                <p>Status: {pkg?.delivered_or_complain}</p>
-                <p>Arrived Location: {pkg?.Arrived_location}</p>
-                <p>Arrived Date: {pkg?.Arrived_location_date}</p>
+
+              <div className="updated">
+                <div>
+                <p>{pkg?.latest_update}</p>
+                <span>{pkg?.Update_text}</span>
+                </div>
+                <hr />
+                <div>
+                 <span>Get More Out of Shiparamalogistics Tracking:</span>
+                <span>Shiparama Tracking Plus</span>
+                </div>
+
+             </div>
+                <div className="preparingfor">
+                <span>{pkg?.delivered_or_complain}</span>
               </div>
+
+               <div className="arrived">
+               <span>{pkg?.Arrived_location}</span>
+               <span>{pkg?.Arrived_location_date}</span>
+             </div>
+
+                <div className="movingthroug">
+                <span>Moving Through Network</span>
+                <span>In Transit to Next Facility</span>
+                <span>{pkg?.Add_date_to_next_facility}</span>
+             </div>
+
+                <div className="arrviedourfacility">
+                <span>Arrived at Shiparama Regional Facility</span>
+                <span>{pkg?.package_arrived_at_Shiparama_Facility}</span>
+                <span>{pkg?.package_arrived_at_Shiparama_Facility_date}</span>
+             </div>
+
+              </div>
+
+              
             ))
           ) : (
             <p>No package updates yet.</p>
