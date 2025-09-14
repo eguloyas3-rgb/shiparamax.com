@@ -204,6 +204,7 @@ export const Navbar = styled.nav`
             width: 70%;
             position: fixed;
             top: 8%;
+            z-index: 500;
         }
 
         .mobilenabar div{
