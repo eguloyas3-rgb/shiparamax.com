@@ -93,7 +93,7 @@ const prev = () => setCurrent(prev => (prev === 0 ? reviewCount - 1 : prev - 1))
           <p>Excellent customer service and smooth delivery process....</p>
           <div className="comments">
             <div>
-              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+              <Luna src="/image/miketon.png" alt="Sarah" width={80} height={80} priority />
             </div>
             <div className="nameofcomment">
               <span>Michael Tan</span>
@@ -149,7 +149,7 @@ const prev = () => setCurrent(prev => (prev === 0 ? reviewCount - 1 : prev - 1))
           <p>Shipping has never been this easy. Super impressed!...</p>
           <div className="comments">
             <div>
-              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+              <Luna src="/image/emma.png" alt="Sarah" width={80} height={80} priority />
             </div>
             <div className="nameofcomment">
               <span>Emma Wilson</span>
@@ -177,11 +177,11 @@ const prev = () => setCurrent(prev => (prev === 0 ? reviewCount - 1 : prev - 1))
           <p>Packages arrive safely every time. Truly dependable..</p>
           <div className="comments">
             <div>
-              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+              <Luna src="/image/michelle.png" alt="Sarah" width={80} height={80} priority />
             </div>
             <div className="nameofcomment">
-              <span>David Kim</span>
-              <span>Manufacturer</span>
+              <span>Michelle Glotfelty</span>
+              <span>Sales Representative</span>
             </div>
           </div>
         </div>
