@@ -925,6 +925,10 @@ export const Footers = styled.footer`
         list-style-type: none;
     }
 
+    li{
+        cursor: pointer;
+    }
+
     .subscribe{
         margin-block:10px
     }

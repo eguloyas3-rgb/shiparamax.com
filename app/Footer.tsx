@@ -10,6 +10,25 @@ import { SiAmericanexpress } from "react-icons/si";
 
 
 export default  function Footer() {
+
+    const Home = () =>{
+       window.location.href = '/' 
+    }
+    const AboutUs = () =>{
+       window.location.href = '/about' 
+    }
+    const Contact = () =>{
+       window.location.href = '/contant' 
+    }
+    const Air = () =>{
+       window.location.href = '/air' 
+    }
+    const ocean = () =>{
+       window.location.href = '/ocean' 
+    }
+    const Packaging = () =>{
+       window.location.href = '/packaging' 
+    }
     
     return(
 
@@ -31,19 +50,19 @@ export default  function Footer() {
                  <p>SERVICES</p>
                 <ul>
                     <li> Cargo Transportation</li>
-                    <li>Air Freight</li>
-                    <li>Ocean Freight</li>
-                    <li> Packaging And Storage</li>
+                    <li onClick={Air}>Air Freight</li>
+                    <li onClick={ocean}>Ocean Freight</li>
+                    <li onClick={Packaging}> Packaging And Storage</li>
                 </ul>
                </div>
 
                <div>
                 <p>SITE PAGES</p>
                 <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
+                    <li onClick={Home}>Home</li>
+                    <li onClick={AboutUs}>About Us</li>
                     <li> Services</li>
-                    <li> Contact Us</li>
+                    <li onClick={Contact}> Contact Us</li>
                 </ul>
                </div>
 
