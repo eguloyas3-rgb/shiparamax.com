@@ -7,11 +7,11 @@ import { FaShieldAlt } from "react-icons/fa";
 import { MdWarehouse } from "react-icons/md";
 import { FaBox } from "react-icons/fa";
 import {Homepages} from './styles'
-import  Whoarewe  from "next/image";
-import Boxig from "next/image";
-import Boxi from "next/image";
-import Box from "next/image";
-import Track from "next/image";
+// import  Whoarewe  from "next/image";
+// import Boxig from "next/image";
+// import Boxi from "next/image";
+// import Box from "next/image";
+// import Track from "next/image";
 import Comment from './comment'
 import Deliverynything from './deliveryanything'
 import AOS from 'aos';
@@ -221,7 +221,7 @@ const gotofaq = () => {
 
 
          <div className="img" data-aos="slide-right" >
-           <Whoarewe src="/image/about_img01.png" alt="" className="whoweareimage" width={400} height={100} priority  />
+           <Image src="/image/about_img01.png" alt="" className="whoweareimage" width={400} height={100} priority  />
         </div>
 
         <div data-aos="fade-up" data-aos-duration="3000" className="whoare">
@@ -255,7 +255,7 @@ Our comprehensive services include order management, shipment tracking and traci
 
           <div className="box">
             <div className="imgaesbox">
-              <Boxig src='/image/sel.jpg' alt="" width={400} height={200} className="imgs"  priority />
+              <Image src='/image/sel.jpg' alt="" width={400} height={200} className="imgs"  priority />
             </div>
              <div className="witep">
               <p>Fast Delivery</p>
@@ -266,7 +266,7 @@ When it comes to logistics, timely delivery is crucial for the success of your b
           </div>
           <div className="box">
             <div className="imgaesbox">
-              <Boxi src='/image/services_img02.jpg' alt="" width={400} height={200} className="imgs"  priority />
+              <Image src='/image/services_img02.jpg' alt="" width={400} height={200} className="imgs"  priority />
             </div>
             <div className="witep">
                <p>24/7 Telephone Support</p>
@@ -276,7 +276,7 @@ When it comes to logistics, timely delivery is crucial for the success of your b
           </div>
           <div className="box">
             <div className="imgaesbox">
-              <Box src='/image/services_img03.jpg' alt="" width={400} height={200} className="imgs"  priority />
+              <Image src='/image/services_img03.jpg' alt="" width={400} height={200} className="imgs"  priority />
             </div>
              <div className="witep">
               <p>More Than Anywhere Shipping</p>
@@ -307,7 +307,7 @@ When it comes to logistics, timely delivery is crucial for the success of your b
       </div>
 
        <div className="imagesdelivery">
-        <Track src="/image/delivery_services_img.png" alt="delivery_services" width={300} height={200} priority />
+        <Image src="/image/delivery_services_img.png" alt="delivery_services" width={300} height={200} priority />
       </div>
     </div>
 
