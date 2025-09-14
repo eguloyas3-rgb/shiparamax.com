@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import {useEffect} from 'react'
 import { BsTrainFreightFront } from "react-icons/bs";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaShieldAlt } from "react-icons/fa";
@@ -13,7 +14,8 @@ import Box from "next/image";
 import Track from "next/image";
 import Comment from './comment'
 import Deliverynything from './deliveryanything'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -25,6 +27,16 @@ import Deliverynything from './deliveryanything'
 export default function Home() {
 
 
+        useEffect(() => {
+        AOS.init({
+          duration: 2000,
+          once: false,   
+        });
+        AOS.refresh();
+      }, []);
+    
+
+
 
   return (
     <Homepages>
@@ -32,7 +44,7 @@ export default function Home() {
         <Image src='/image/background.jpg' alt="background" fill className="images" />
       </div>
 
-      <form className="middlewrite">
+      <form className="middlewrite" data-aos="zoom-in-up">
         <div className="track">
           <span>WELCOME TO Shiparamalogistics  & SECURITY COMPANY</span>
           <span>Unbeatable Tracking and Transport Service</span>
@@ -43,7 +55,7 @@ export default function Home() {
         </div>
       </form>
 
-      <div className="shipment">
+      <div className="shipment" data-aos="flip-left">
 
         <div>
           <span><BsTrainFreightFront /></span>
@@ -75,11 +87,11 @@ export default function Home() {
       <div className="main">
 
 
-         <div className="img">
+         <div className="img" data-aos="slide-right" >
            <Whoarewe src="/image/about_img01.png" alt="" className="whoweareimage" width={400} height={100} priority  />
         </div>
 
-        <div className="whoare">
+        <div data-aos="fade-up" data-aos-duration="3000" className="whoare">
           <h2>Who We Are</h2>
           <h3>About Our Cargo Delivery</h3>
           <p><strong>Shiparamalogistics  & Security Company</strong> is your global transportation management solution.
@@ -94,7 +106,7 @@ Our comprehensive services include order management, shipment tracking and traci
 
 
 
-      <div className="Delivery">
+      <div className="Delivery" data-aos="zoom-in" >
 
         <div className="deliver">
           <p>Delivery innovative service</p>
@@ -105,7 +117,7 @@ Our comprehensive services include order management, shipment tracking and traci
       
       </div>
 
-      <div className="fastdeliry">
+      <div className="fastdeliry" data-aos="flip-left">
         <div className="fast">
 
           <div className="box">

@@ -1,88 +1,16 @@
 import styled from "styled-components";
 
-export const Headerss = styled.header`
-    background-color: #4e148c;
-    color: whitesmoke;
-     font-family: var(--font-geist-sans); 
-   
- 
-    .main{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3px 10px;
-    }
 
-    .left{
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        font-size: 15px;
-        cursor: pointer;
-        padding: 5px;
-    }
-    .phonecontact{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
-    }
-
-   .emailcontact{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: blue;
-    justify-content: center;
-    
-   }
-
-   .address{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 12px;
-   }
-
-
-   .right{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 15px;
-    cursor: pointer;
-   }
-
-   .right span:nth-child(2):hover{
-    transform: scale(1.6);
-    rotate: calc(-60deg);
-   }
-   .right span:nth-child(3):hover{
-    rotate: calc(60deg);
-    transform: scale(1.6);
-   }
-   .right span:nth-child(4):hover{
-    rotate: calc(-60deg);
-    transform: scale(1.6);
-   }
-   .right span:nth-child(5):hover{
-    rotate: calc(60deg);
-    transform: scale(1.6);
-   }
-
-
-   @media screen and (max-width: 900px) {
-      display: none;
-   }
-   
-`
 
 export const Navbar = styled.nav`
-    box-shadow: 2px 2px 4px;
-    padding: 20px 8px;
-   font-family: var(--font-geist-sans); 
+
+     box-shadow: 2px 2px 4px;
+  padding: 20px 8px;
+  position: sticky;
+  top: 0;
+  background: white;
+  font-family: var(--font-geist-sans);
+  z-index: 1000;
 
     .main{
         width: 80%;
@@ -272,11 +200,11 @@ export const Navbar = styled.nav`
             display: block;
             z-index: 10;
             background-color: white;
-            height: calc(100vh + 1000px);
+            height: 100%;
             right: 0;
             width: 70%;
-              /* position: fixed; */
-              top: 7%;
+            position: fixed;
+            top: 8%;
         }
 
         .mobilenabar div{
