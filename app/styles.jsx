@@ -247,9 +247,27 @@ position: relative;
   background-color: transparent;
  overflow: hidden;
  min-height: 100vh;
+ position: relative;
+  .loader-blur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;  /* full screen overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 800; /* under spinner */
+  }
 
-
-    
+  .spinner-grow {
+    position: fixed;        
+    top: 50%;               
+    left: 50%; 
+    color: whitesmoke;             
+    transform: translate(-50%, -50%);
+    z-index: 900; /* above blur */
+    font-size: 20px;
+  }
     .images{
         position: absolute;
         position: fixed;
@@ -325,6 +343,7 @@ position: relative;
   width: 40%;
   left: 50%;
   color: black;
+  top: 2%;
   transform: translateX(-50%);
   padding: 10px 20px;
    z-index: 900 ;

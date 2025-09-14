@@ -13,8 +13,12 @@ import Comment from './comment'
 import Deliverynything from './deliveryanything'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-   import { IoIosArrowForward } from "react-icons/io";
-     import { VscChromeClose } from "react-icons/vsc";
+import { IoIosArrowForward } from "react-icons/io";
+import { VscChromeClose } from "react-icons/vsc";
+import { setTimeout } from "timers/promises";
+
+
+
 
 
 
@@ -39,6 +43,13 @@ export type TrackingPackage = {
 };
 
 
+
+
+
+
+
+export default function Home() {
+
 const  AIR = () =>{
   window.location.href = '/air'
 }
@@ -49,11 +60,6 @@ const  CARGO = () =>{
   window.location.href = '/car-go'
 }
 
-
-
-
-
-export default function Home() {
 
   const [trackingId, setTrackingId] = useState<string>("");
   const [track, setTrack] = useState<Track | null>(null);
@@ -83,8 +89,11 @@ export default function Home() {
       if (err instanceof Error){
         alert(err.message)
       }
-    } finally {
+    } 
+    
+    finally {
       setLoading(false);
+      
     }
   }
 
@@ -113,6 +122,20 @@ const gotofaq = () => {
 
   return (
     <Homepages>
+
+
+     {loading && (
+      <div className="loader-blur">
+
+      </div>
+     )}
+
+    {loading &&     <div className="spinner-grow text-primary" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </div>}
+        
+
+
       <div className="bakcimh">
         <Image src='/image/background.jpg' alt="background" fill className="images" />
       </div>
@@ -133,8 +156,9 @@ const gotofaq = () => {
 
 
           </div>
-                      {loading && <p>Loading...</p>}
-        
+          
+
+
 
 
 
