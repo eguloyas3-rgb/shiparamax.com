@@ -137,7 +137,7 @@ const gotofaq = () => {
           
           </div>
          {packages?.length ? (  
-      packages.map((pkg, index) => (  
+      packages.map((pkg: TrackingPackage, index: number) => (  
         <div key={index}>  
           <div className="updated">
             <div>
