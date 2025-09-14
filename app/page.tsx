@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import Image from "next/image";
 import {useEffect, useState} from 'react'
 import { BsTrainFreightFront } from "react-icons/bs";
@@ -7,11 +8,6 @@ import { FaShieldAlt } from "react-icons/fa";
 import { MdWarehouse } from "react-icons/md";
 import { FaBox } from "react-icons/fa";
 import {Homepages} from './styles'
-// import  Whoarewe  from "next/image";
-// import Boxig from "next/image";
-// import Boxi from "next/image";
-// import Box from "next/image";
-// import Track from "next/image";
 import Comment from './comment'
 import Deliverynything from './deliveryanything'
 import AOS from 'aos';
