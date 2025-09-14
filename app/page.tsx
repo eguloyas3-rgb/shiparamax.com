@@ -138,52 +138,50 @@ const gotofaq = () => {
           </div>
           
           </div>
-          {packages.length > 0 ? (
-            packages.map((pkg, index) => (
-              <div key={index}>
+         {packages?.length ? (  // <- optional chaining added here (packages?.length)
+      packages.map((pkg, index) => (  // <- make sure 'index' is declared here!
+        <div key={index}>  
+          <div className="updated">
+            <div>
+              <p>{pkg.latest_update}</p>  {/* optional chaining '?' can be removed if pkg is always defined */}
+              <span>{pkg.Update_text}</span>
+            </div>
+            <hr />
+            <div>
+              <span>Get More Out of Shiparamalogistics Tracking:</span>
+              <span>Shiparama Tracking Plus</span>
+            </div>
+          </div>
 
-              <div className="updated">
-                <div>
-                <p>{pkg?.latest_update}</p>
-                <span>{pkg?.Update_text}</span>
-                </div>
-                <hr />
-                <div>
-                 <span>Get More Out of Shiparamalogistics Tracking:</span>
-                <span>Shiparama Tracking Plus</span>
-                </div>
+          <div className="preparingfor">
+            <span>{pkg.delivered_or_complain}</span>
+          </div>
 
-             </div>
-                <div className="preparingfor">
-                <span>{pkg?.delivered_or_complain}</span>
-              </div>
+          <div className="arrived">
+            <span>{pkg.Arrived_location}</span>
+            <span>{pkg.Arrived_location_date}</span>
+          </div>
 
-               <div className="arrived">
-               <span>{pkg?.Arrived_location}</span>
-               <span>{pkg?.Arrived_location_date}</span>
-             </div>
+          <div className="movingthroug">
+            <span>Moving Through Network</span>
+            <span>In Transit to Next Facility</span>
+            <span>{pkg.Add_date_to_next_facility}</span>
+          </div>
 
-                <div className="movingthroug">
-                <span>Moving Through Network</span>
-                <span>In Transit to Next Facility</span>
-                <span>{pkg?.Add_date_to_next_facility}</span>
-             </div>
-
-                <div className="arrviedourfacility">
-                <span>Arrived at Shiparama Regional Facility</span>
-                <span>{pkg?.package_arrived_at_Shiparama_Facility}</span>
-                <span>{pkg?.package_arrived_at_Shiparama_Facility_date}</span>
-             </div>
-
-              </div>
-
-              
-            ))
-          ) : (
-            <p>No package updates yet.</p>
-          )}
+          <div className="arrviedourfacility">
+            <span>Arrived at Shiparama Regional Facility</span>
+            <span>{pkg.package_arrived_at_Shiparama_Facility}</span>
+            <span>{pkg.package_arrived_at_Shiparama_Facility_date}</span>
+          </div>
         </div>
-      )}
+      ))
+    ) : (
+      <p>No package updates yet.</p>
+    )}
+
+
+  </div>
+)}
    
 
 
