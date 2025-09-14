@@ -10,8 +10,12 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 export default function Comment() {
   
       const [current, setCurrent] = useState(0);
-      const next = () => setCurrent((prev) => (prev === 1 ? 0 : prev + 1)); // change 1 to number of reviews -1
-      const prev = () => setCurrent((prev) => (prev === 0 ? 1 : prev - 1));
+
+
+     const reviewCount = 6; // total reviews
+const next = () => setCurrent(prev => (prev === reviewCount - 1 ? 0 : prev + 1));
+const prev = () => setCurrent(prev => (prev === 0 ? reviewCount - 1 : prev - 1));
+
 
     return(
         <Commets>
@@ -72,7 +76,7 @@ export default function Comment() {
       </div>
 
       {/* Review 3 */}
-      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+      <div style={{ display: current === 2 ? "block" : "none" }} className="myreview">
         <div className="tipic">
           <p>Happy Customer Quotes</p>
           <h2>Our Top Reviews</h2>
@@ -100,7 +104,7 @@ export default function Comment() {
       </div>
 
       {/* Review 4 */}
-      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+      <div style={{ display: current === 3 ? "block" : "none" }} className="myreview">
         <div className="tipic">
           <p>Happy Customer Quotes</p>
           <h2>Our Top Reviews</h2>
@@ -117,7 +121,7 @@ export default function Comment() {
           <p>Fast, reliable, and professional. I’m very satisfied!...</p>
           <div className="comments">
             <div>
-              <Luna src="/image/testi_avatar02.png" alt="Sarah" width={80} height={80} priority />
+              <Luna src="/image/sara.jpg" alt="Sarah" width={80} height={80} priority />
             </div>
             <div className="nameofcomment">
               <span>Sara Johnson</span>
@@ -128,7 +132,7 @@ export default function Comment() {
       </div>
 
       {/* Review 5 */}
-      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+      <div style={{ display: current === 4 ? "block" : "none" }} className="myreview">
         <div className="tipic">
           <p>Happy Customer Quotes</p>
           <h2>Our Top Reviews</h2>
@@ -156,7 +160,7 @@ export default function Comment() {
       </div>
 
       {/* Review 6 */}
-      <div style={{ display: current === 1 ? "block" : "none" }} className="myreview">
+      <div style={{ display: current === 5 ? "block" : "none" }} className="myreview">
         <div className="tipic">
           <p>Happy Customer Quotes</p>
           <h2>Our Top Reviews</h2>
