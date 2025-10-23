@@ -8,7 +8,7 @@ import Nav from "./Nav";
 import Chatbox from './chatbox';
 import Footer from './Footer';
 import Fedex from "./Fedex";
-import GoogleTranslate from "./GoogleTranslate";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +35,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-       <GoogleTranslate />
+
         <Nav />
         {children}
         
