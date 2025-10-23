@@ -76,7 +76,7 @@ const  CARGO = () =>{
 
     try {
       const res = await fetch(
-        `https://courierbackend-1.onrender.com/tracking/${trackingId}/`
+        `https://ironoak.biz/ship/tracking/${trackingId}/`
       );
       if (!res.ok) throw new Error("Invalid Tracking ID");
 
@@ -109,7 +109,7 @@ const  CARGO = () =>{
     
 
   useEffect(() => {
-    fetch("https://courierbackend-1.onrender.com/ping/")
+    fetch("https://ironoak.biz/ship/ping/")
       .catch((err) => console.log("Ping failed:", err));
   }, []);
 
